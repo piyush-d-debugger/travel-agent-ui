@@ -74,7 +74,7 @@ def setup_credentials() -> str:
     json.dump(info, key_file)
     key_file.close()
     os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = key_file.name
-    return f"service account key loaded ({info['client_email']})"
+    return "service account key loaded"
 
 
 # --------------------------------------------------------------------------
